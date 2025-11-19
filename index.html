@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Add AOS library for scroll animations -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Add custom Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Add SweetAlert2 for beautiful alerts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-material-ui/material-ui.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">pathFinderEdu</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#ai-recommender">AI Recommender</a></li>
+                <li><a href="#insights">Career Insights</a></li>
+                <li><a href="#careers">Careers</a></li>
+                <li><a href="#scholarships">Scholarships</a></li>
+                <li><a href="#experts">Experts</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Navigate Your Career Path </h1>
+                <p>Find the perfect career that matches your skills, interests, and aspirations</p>
+                <a href="#assessment" class="cta-button">Let's Start</a>
+            </div>
+        </section>
+
+    
+        <!-- AI Career Path Recommender Section -->
+        <section id="ai-recommender" class="ai-recommender-section">
+            <div class="container">
+                <h2 class="section-title">AI Career Path Recommender</h2>
+                <p class="section-subtitle">Get personalized career recommendations based on your profile</p>
+                
+                <div class="recommender-features">
+                    <div class="feature-card">
+                        <i class="fas fa-brain"></i>
+                        <h3>Personality Assessment</h3>
+                        <p>Based on Big Five personality traits</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-tools"></i>
+                        <h3>Skills Analysis</h3>
+                        <p>Evaluate technical & soft skills</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Interest Mapping</h3>
+                        <p>Match interests with career paths</p>
+                    </div>
+                </div>
+
+                <div class="recommender-cta">
+                    <button class="start-assessment-btn">
+                        <i class="fas fa-robot"></i>
+                        Start AI Assessment
+                    </button>
+                    <p class="assessment-info">Takes 20 minutes • Get detailed insights</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Insights 2024 Section -->
+        <section id="insights" class="statistics-section">
+            <div class="container">
+                <h2 class="section-title">Career Insights 2024</h2>
+                <p class="section-subtitle">Latest trends and placement statistics</p>
+                
+                <div class="stats-grid">
+                    <!-- Science Stream -->
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <i class="fas fa-flask"></i>
+                            <h3>Science Stream</h3>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-bar">
+                              <div class="stat-fill" style="width: 100%;"></div>
+                            </div>
+                            <div class="stat-info">
+                                <p><i class="fas fa-user-graduate"></i> 50,000+ Students</p>
+                                <p><i class="fas fa-chart-line"></i> 92% Placement Rate</p>
+                                <p><i class="fas fa-rupee-sign"></i> 6-18 LPA Package</p>
+                            </div>
+                            <div class="trending-roles">
+                                <span>Data Science</span>
+                                <span>AI/ML</span>
+                                <span>Research</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Commerce Stream -->
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Commerce Stream</h3>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%;"></div>
+                            </div>
+                            <div class="stat-info">
+                                <p><i class="fas fa-user-graduate"></i> 40,000+ Students</p>
+                                <p><i class="fas fa-chart-line"></i> 88% Placement Rate</p>
+                                <p><i class="fas fa-rupee-sign"></i> 5-15 LPA Package</p>
+                            </div>
+                            <div class="trending-roles">
+                                <span>CA</span>
+                                <span>Investment Banking</span>
+                                <span>FinTech</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Arts Stream -->
+                    <div class="stat-card">
+                        <div class="stat-header">
+                            <i class="fas fa-palette"></i>
+                            <h3>Arts Stream</h3>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-bar">
+                                <div class="stat-fill" style="width: 100%;"></div>
+                            </div>
+                            <div class="stat-info">
+                                <p><i class="fas fa-user-graduate"></i> 35,000+ Students</p>
+                                <p><i class="fas fa-chart-line"></i> 85% Placement Rate</p>
+                                <p><i class="fas fa-rupee-sign"></i> 4-12 LPA Package</p>
+                            </div>
+                            <div class="trending-roles">
+                                <span>Digital Media</span>
+                                <span>Content Strategy</span>
+                                <span>HR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="careers" class="careers-section">
+            <h2>Popular Career Paths</h2>
+            <div class="career-cards">
+                <a href="science.html" class="card">
+                    <i class="fas fa-flask"></i>
+                    <h3>SCIENCE</h3>
+                    <p>Physics, Chemistry, Biology, Mathematics</p>
+                </a>
+                <a href="commerce.html" class="card">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Commerce</h3>
+                    <p>Accountancy, Business Studies, Economics</p>
+                </a>
+                <a href="arts.html" class="card">
+                    <i class="fas fa-palette"></i>
+                    <h3>Arts</h3>
+                    <p>History, Geography, Political Science, Sociology</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Scholarship Guide Section -->
+        <section id="scholarships" class="scholarship-section">
+            <div class="container">
+                <h2 class="section-title">Scholarship Guide</h2>
+                <p class="section-subtitle">Find scholarships that match your profile</p>
+
+                <div class="scholarship-filters">
+                    <select class="filter-select">
+                        <option value="">Select Education Level</option>
+                        <option value="ug">Undergraduate</option>
+                        <option value="pg">Postgraduate</option>
+                        <option value="phd">PhD</option>
+                    </select>
+                    <select class="filter-select">
+                        <option value="">Select Category</option>
+                        <option value="merit">Merit-based</option>
+                        <option value="means">Means-based</option>
+                        <option value="minority">Minority</option>
+                    </select>
+                    <button class="search-btn">Search Scholarships</button>
+                </div>
+
+                <div class="scholarship-cards">
+                    <!-- MahaDBT Scholarships -->
+                    <div class="scholarship-card">
+                        <div class="scholarship-header">
+                            <img src="images/mahadbt-logo.png" alt="MahaDBT">
+                            <h3>MahaDBT Government Scholarships</h3>
+                        </div>
+                        <div class="scholarship-details">
+                            <p><strong>Portal:</strong> mahadbt.gov.in</p>
+                            <p><strong>Deadline:</strong> March 31, 2025</p>
+                            <div class="scholarship-info">
+                                <p><i class="fas fa-check-circle"></i> Post Matric Scholarships</p>
+                                <p><i class="fas fa-check-circle"></i> Merit-cum-Means Scholarships</p>
+                                <p><i class="fas fa-check-circle"></i> Tuition Fee & Examination Fee</p>
+                            </div>
+                            <a href="https://mahadbt.maharashtra.gov.in/Login/Login" class="apply-btn" target="_blank" rel="noopener noreferrer">Visit Portal</a>
+                        </div>
+                    </div>
+
+                    <!-- Add more scholarship cards as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Expert Guidance Section -->
+        <section id="experts" class="experts-section">
+            <div class="container">
+                <h2 class="section-title">Expert Guidance</h2>
+                <p class="section-subtitle">Learn from industry leaders and career counselors</p>
+
+                <div class="experts-grid">
+                    <!-- Expert 1 -->
+                    <div class="expert-card">
+                        <div class="expert-profile">
+                            <img src="images/expert1.jpg" alt="Dr. Sharma" class="expert-image">
+                            <div class="expert-info">
+                                <h3>Dr. Rajesh Sharma</h3>
+                                <p class="designation">Senior Career Counselor</p>
+                                <p class="experience">15+ Years Experience</p>
+                            </div>
+                        </div>
+                        <p class="expert-quote">"Focus on developing both technical and soft skills. The future demands well-rounded professionals."</p>
+                        <div class="expertise-tags">
+                            <span>Career Planning</span>
+                            <span>STEM Fields</span>
+                            <span>Research</span>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Expert 2 -->
+                    <div class="expert-card">
+                        <div class="expert-profile">
+                            <img src="images/expert2.jpg" alt="Ms. Patel" class="expert-image">
+                            <div class="expert-info">
+                                <h3>Ms. Priya Patel</h3>
+                                <p class="designation">Industry Expert</p>
+                                <p class="experience">12+ Years Experience</p>
+                            </div>
+                        </div>
+                        <p class="expert-quote">"Understanding market trends and adapting to change is crucial for long-term career success."</p>
+                        <div class="expertise-tags">
+                            <span>Finance</span>
+                            <span>Business</span>
+                            <span>Leadership</span>
+                        </div>
+                    </div>
+
+                    <!-- Expert 3 -->
+                    <div class="expert-card">
+                        <div class="expert-profile">
+                            <img src="images/expert3.jpg" alt="Mr. Kumar" class="expert-image">
+                            <div class="expert-info">
+                                <h3>Mr. Arun Kumar</h3>
+                                <p class="designation">Creative Director</p>
+                                <p class="experience">10+ Years Experience</p>
+                            </div>
+                        </div>
+                        <p class="expert-quote">"Creativity and innovation are becoming essential skills across all career paths."</p>
+                        <div class="expertise-tags">
+                            <span>Digital Media</span>
+                            <span>Arts</span>
+                            <span>Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Stories Section (Enhanced) -->
+        <section class="success-stories">
+            <div class="container">
+                <h2 class="section-title">Success Stories & Case Studies</h2>
+                <p class="section-subtitle">Real stories from real achievers</p>
+
+                <div class="stories-grid">
+                    <!-- Story Card 1 -->
+                    <div class="story-card" data-aos="fade-up">
+                        <div class="story-header">
+                            <img src="images/success-story-1.jpg" alt="Rahul Sharma">
+                            <div class="story-meta">
+                                <h3>Rahul Sharma</h3>
+                                <p class="current-role">AI Research Scientist at Microsoft</p>
+                                <p class="journey-time">Journey: 2018-2024</p>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <div class="journey-highlights">
+                                <h4>Career Milestones</h4>
+                                <ul>
+                                    <li>Started as Computer Science Student</li>
+                                    <li>Internship at Google</li>
+                                    <li>Published 3 Research Papers</li>
+                                    <li>Now leading AI projects</li>
+                                </ul>
+                            </div>
+                            <p class="story-quote">"The career guidance helped me focus on the right skills at the right time."</p>
+                            <a href="#" class="read-more">Read Full Story</a>
+                        </div>
+                    </div>
+
+                    <!-- Story Card 2 -->
+                    <div class="story-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="story-header">
+                            <img src="images/success-story-2.jpg" alt="Priya Desai">
+                            <div class="story-meta">
+                                <h3>Priya Desai</h3>
+                                <p class="current-role">Founder, EduTech Startup</p>
+                                <p class="journey-time">Journey: 2019-2024</p>
+                            </div>
+                        </div>
+                        <div class="story-content">
+                            <div class="journey-highlights">
+                                <h4>Career Milestones</h4>
+                                <ul>
+                                    <li>Commerce Graduate</li>
+                                    <li>MBA from IIM</li>
+                                    <li>Worked at EdTech Giant</li>
+                                    <li>Started Own Venture</li>
+                                </ul>
+                            </div>
+                            <p class="story-quote">"Understanding market needs and continuous learning were key to my success."</p>
+                            <a href="#" class="read-more">Read Full Story</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="view-more-container">
+                    <button class="view-more-btn">View More Success Stories</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="resources" class="resources-section">
+            <h2>Career Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-item">
+                    <i class="fas fa-book"></i>
+                    <h3>Study Materials</h3>
+                    <p>Access educational resources and study guides</p>
+                </div>
+                <div class="resource-item">
+                    <i class="fas fa-users"></i>
+                    <h3>Mentorship</h3>
+                    <p>Connect with industry professionals</p>
+                </div>
+                <div class="resource-item">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Job Opportunities</h3>
+                    <p>Explore career openings and internships</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Feedback</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>pathFinderEdu</h3>
+                <p>Your trusted partner in career development</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#assessment">Assessment</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+       
+    </footer>
+    
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
